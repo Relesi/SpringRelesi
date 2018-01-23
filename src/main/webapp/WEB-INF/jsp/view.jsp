@@ -34,26 +34,8 @@
         <th>Sobrenome</th>
         <th>Ação</th>
     </tr>
-    <c:forEach var="list" items="${lists}">
-        <tr>
-            <td>${list.id}</td>
-            <td>${list.nome}</td>
-            <td>${list.sobrenome}</td>
-            <td></td>
-        </tr>
-    </c:forEach>
-</table>
-<hr/>
 
-    <form method="post" action="/save">
-    Nome:<br>
-    <input type="text" name="nome" />
-    <br>
-    Sobrenome:<br>
-    <input type="text" name="sobrenome" />
-    <br><br>
-    <input type="submit" value="Submit">
-</form>
+</table>
 
 </body>
 </html>
