@@ -1,6 +1,7 @@
 package br.com.developer.SpringRelesi;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
@@ -9,8 +10,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class MainController {
+    @RequestMapping("/")
     public ModelAndView doHome(){
-        ModelAndView mv = new ModelAndView("index");
+       ModelAndView mv = new ModelAndView("index");
         return mv;
     }
 }
