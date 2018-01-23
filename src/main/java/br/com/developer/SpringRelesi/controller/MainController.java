@@ -1,5 +1,6 @@
-package br.com.developer.SpringRelesi;
+package br.com.developer.SpringRelesi.controller;
 
+import br.com.developer.SpringRelesi.model.UsuarioRepositorio;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -10,9 +11,14 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class MainController {
+
+    UsuarioRepositorio usuarioRepo;
+
     @RequestMapping("/")
     public ModelAndView doHome(){
        ModelAndView mv = new ModelAndView("index");
+       mv.addObject( "lists",usuarioRepo.findAll());
+
         return mv;
     }
 }
