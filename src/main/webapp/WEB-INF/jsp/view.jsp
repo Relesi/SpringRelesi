@@ -30,12 +30,21 @@
 <table>
     <tr>
         <th>Id</th>
+        <td>${lists.id}</td>
+    </tr>
+
+    <tr>
         <th>Nome</th>
+        <td>${lists.nome}</td>
+    </tr>
+
+    <tr>
         <th>Sobrenome</th>
-        <th>Ação</th>
+        <td>${lists.sobrenome}</td>
     </tr>
 
 </table>
+<a href="/">Voltar</a>
 
 </body>
 </html>

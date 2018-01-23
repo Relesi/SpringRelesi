@@ -39,7 +39,12 @@
             <td>${list.id}</td>
             <td>${list.nome}</td>
             <td>${list.sobrenome}</td>
-            <td></td>
+            <td>
+                
+                <a href="/view/${list.id}">Visualizar</a>
+                <a href="/delete/${list.id}">Deletar</a>
+                <a href="/Edit/${list.id}">Editar</a>
+            </td>
         </tr>
     </c:forEach>
 </table>
