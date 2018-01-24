@@ -43,7 +43,7 @@
                 
                 <a href="/view/${list.id}">Visualizar</a>
                 <a href="/delete/${list.id}">Deletar</a>
-                <a href="/Edit/${list.id}">Editar</a>
+                <a href="/edit/${list.id}">Editar</a>
             </td>
         </tr>
     </c:forEach>
@@ -51,6 +51,7 @@
 <hr/>
 
     <form method="post" action="/save">
+    <input type="hidden" name="id" value="" />
     Nome:<br>
     <input type="text" name="nome" />
     <br>
