@@ -37,4 +37,10 @@ public class MainController {
         mv.addObject( "lists",usuarioRepo.findOne(id));
         return mv;
     }
+    @RequestMapping( value = "/delete/{id}", method = RequestMethod.GET)
+    public ModelAndView doDelete(@PathVariable("id") int id){
+        ModelAndView mv = new ModelAndView("redirect:/");
+        usuarioRepo.delete(id);
+        return mv;
+    }
 }
